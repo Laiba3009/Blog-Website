@@ -3,7 +3,7 @@ import { Post } from "../../types";
 import Container from "./Container";
 import Image from "next/image";
 import { urlFor } from "@/lib/createClient";
-import CommentSection from "./CommentSection"; // Ensure this component exists
+import CommentSection from "./CommentSection"; 
 
 interface Props {
   posts: Post[];
@@ -36,7 +36,7 @@ const BlogContent = ({ posts }: Props) => {
               </div>
               <div className="w-full md:w-2/5 flex flex-col justify-between py-10 px-4">
                 <div className="flex flex-col gap-5">
-                  <h2 className="text-2xl font-semibold hover:text-orange-600 duration-200 cursor-pointer">
+                  <h2 className="text-2xl font-semibold hover:text-pink-800 duration-200 cursor-pointer">
                     {post?.title}
                   </h2>
                   <p className="text-gray-500">{post?.description}</p>
